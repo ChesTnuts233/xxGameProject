@@ -1,4 +1,0 @@
-repository "xxGameProject@xxworkproject@cloud.cn"
-  path "/"
-    br "/main"
-    co "/main"
