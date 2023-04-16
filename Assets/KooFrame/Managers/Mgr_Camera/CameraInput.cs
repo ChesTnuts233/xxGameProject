@@ -1,14 +1,15 @@
 ﻿#if ENABLE_INPUT_SYSTEM
 
 
+using KooFrame;
 using MyUtils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CameraInput : MonoBehaviour
+public class CameraInput : KooBaseInput
 {
 
-	CameraCtrl CameraCtrlMap; //ActionsMap产生的Map脚本
+	//CameraCtrl CameraCtrlMap; //ActionsMap产生的Map脚本
 
 	#region 第三人称控制输入
 	public Vector2 Look3rd;

@@ -21,7 +21,6 @@ namespace KooFrame
         {
             //构造函数中添加Update监听
             MonoMgr.Instance.AddUpdateListener(MyUpdate);
-            Debug.Log("InputMgr");
         }
 
         private void MyUpdate()

@@ -30,7 +30,6 @@ public enum ItemQuality
 /// </summary>
 public class Item : ScriptableObject
 {
-
     public int ID { get; set; }
     public string Name { get; set; }
     public ItemType Type { get; set; }

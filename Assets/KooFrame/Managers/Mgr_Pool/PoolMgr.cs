@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-/// <summary>
+
+namespace KooFrame
+{
+    /// <summary>
 /// 缓存池模块（对象池）
 /// </summary>
 public class PoolMgr : Singleton<PoolMgr>   //单例
@@ -75,5 +78,7 @@ public class PoolMgr : Singleton<PoolMgr>   //单例
         poolDic = null;
     }
 }
+}
+
 
 

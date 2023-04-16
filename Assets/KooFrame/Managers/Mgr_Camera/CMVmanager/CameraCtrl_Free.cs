@@ -12,7 +12,7 @@ public class CameraCtrl_Free : MonoBehaviour
 	public Transform CameraPlayer;
 	public PlayerInput Input;
 	public CameraInput CameraInput;
-	CameraCtrl CameraCtrl;
+	//CameraCtrl CameraCtrl;
 
 	public float mouseSensitivity = 100f;                   //鼠标灵敏度
 	[SerializeField] private float yRotation = 0f;          //y轴旋转累加值

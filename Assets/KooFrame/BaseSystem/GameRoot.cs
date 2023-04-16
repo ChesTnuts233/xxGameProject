@@ -2,6 +2,7 @@
 using KooFrame.Managers;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace KooFrame
 {
@@ -12,7 +13,7 @@ namespace KooFrame
     {
         public GameObject KooCanvas;
 
-        
+
         public bool IsLaunchStartPanel = false;
 
         public bool IsLaunchInventoryPanel = false;
@@ -38,7 +39,6 @@ namespace KooFrame
         {
             //让GameRoot过场不销毁
             DontDestroyOnLoad(this);
-
             //获取到GameRoot中的组件
             KooCanvas = GameObject.Find("KooCanvas");
         }
@@ -47,10 +47,20 @@ namespace KooFrame
         {
             if (IsLaunchStartPanel)
             {
-                UIMgr.Instance.OpenPanel<LoginPanel>("LoginPanel",UIMgr.E_UI_Layer.Bottom, (panel) =>
-                {
-                    
-                });
+                UIMgr.Instance.OpenPanel<LoginPanel>("LoginPanel", UIMgr.E_UI_Layer.Bottom, (panel) => { });
+            }
+
+            // CinemachineManager cinemachineManager = GameObject.Find("CameraManager").GetComponent<CinemachineManager>();
+            //设置当前初始摄像机为看向人物的第三人称相机
+            PerspectiveManager.Instance.OpenCMCameraBySetActive("3rdCameraCtrl"); 
+            EventCenter.Instance.EventTrigger<bool>("Player第三人称控制",true);
+        }
+
+        private void Update()
+        {
+            if (Keyboard.current.jKey.isPressed)
+            {
+                Debug.Log("testJ");
             }
         }
 

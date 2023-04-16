@@ -2,7 +2,7 @@
 using GridSystem;
 using UnityEngine;
 
-namespace TankGamePlay
+namespace GamePlay
 {
     public class GridXZTesting : MonoBehaviour
     {

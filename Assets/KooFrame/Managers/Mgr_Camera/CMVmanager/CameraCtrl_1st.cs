@@ -18,7 +18,7 @@ public class CameraCtrl_1st : MonoBehaviour
 	public Transform CameraPlayer;
 	public PlayerInput Input;
 	public CameraInput CameraInput;
-	CameraCtrl CameraCtrl;
+	//CameraCtrl CameraCtrl;
 
 	private void OnEnable()
 	{

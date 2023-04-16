@@ -74,17 +74,17 @@ public class InventoryManager : MonoBehaviour
 		
 		ToolTipPanel tipobj = Resources.Load<ToolTipPanel>("UI/UIPanel/ToolTipPanel");
 		toolTipPanel = tipobj;
-		UIMgr.Instance.OpenPanel<InventoryPanel>("InventoryPanel", UIMgr.E_UI_Layer.Top, (panel) =>
-		{
-			panel.transform.localPosition = new Vector2(0, 0);
-			PickedItem = GameObject.Find("PickedItem").GetComponent<ItemUI>();
-		}, false);
+		// UIMgr.Instance.OpenPanel<InventoryPanel>("InventoryPanel", UIMgr.E_UI_Layer.Top, (panel) =>
+		// {
+		// 	panel.transform.localPosition = new Vector2(0, 0);
+		// 	PickedItem = GameObject.Find("PickedItem").GetComponent<ItemUI>();
+		// }, false);
 	}
 	void Start()
 	{
 		//var tempPickedItem = canvas.transform.Find("InventoryPanel/PickedItem");
 		//pickedItem = tempPickedItem.GetComponent<ItemUI>();
-		pickedItem.Hide();
+		//pickedItem.Hide();
 		//canvas = GameObject.Find("Canvas").GetComponent<Canvas>();      //获得画布
 	}
 	

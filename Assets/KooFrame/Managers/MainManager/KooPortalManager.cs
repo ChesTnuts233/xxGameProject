@@ -48,7 +48,7 @@ namespace KooFrame.Managers
         /// </para>
         /// </remarks>
         /// </summary>
-        private new void Awake()
+        private void Awake()
         {
             if (!_isModeSet)
             {
