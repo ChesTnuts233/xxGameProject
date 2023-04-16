@@ -1,12 +1,12 @@
 Library/
 Temp/
 .vscode/
-.idea/
+/.idea/
 Logs/
-obj/
+/obj/
 UserSettings/
 Packages/
-.plastic/
+/.plastic/
 *.sln
 *.csproj
 *.sln
